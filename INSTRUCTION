@@ -1,0 +1,70 @@
+DOCUMENTATION
+
+This App calculates the repayment amount for a loan given the term, frequncy of repayment, and rate of interest.
+
+Inputs:
+
+Amount of loan : 
+                            Default value = 10000,
+                            min = 1000,
+                            max = 100000,
+                            step = 1000
+                
+                Please do not include currency symbol
+                This app works for all currency :p
+                
+                
+Loan term :
+                            Default value = 2,
+                            min = 1,
+                            max = 10, 
+                            step = 1
+                
+                Term is in whole number of years
+                
+Annual rate of interest(%) :
+                            value = 5,
+                            min = 1,
+                            max = 100,
+                            step = 0.25
+                            
+                Input only numbers . Please do not add "%" symbol
+                Note: The interest used is the effective annual rate of interest
+                      See https://www.investopedia.com/terms/e/effectiveinterest.asp
+                
+Frequency of repayment:
+                            Options available are
+                            "Weekly","Monthly","Quarterly","Half yearly", and "Annually"
+                            
+Output:
+        The loanApp calculates the equal instalment payable at the choosen frequency
+        that is required to pay off the loan in its entirety by the end of the 
+        choosen term given the choice of loan amount and the rate of interest.
+        
+other information
+        
+        
+R version 3.6.2 (2019-12-12)
+Platform: x86_64-w64-mingw32/x64 (64-bit)
+Running under: Windows 10 x64 (build 18363)
+
+Matrix products: default
+
+locale:
+[1] LC_COLLATE=English_United Kingdom.1252  LC_CTYPE=English_United Kingdom.1252   
+[3] LC_MONETARY=English_United Kingdom.1252 LC_NUMERIC=C                           
+[5] LC_TIME=English_United Kingdom.1252    
+
+attached base packages:
+[1] stats     graphics  grDevices utils     datasets  methods   base     
+
+other attached packages:
+[1] shiny_1.4.0.2
+
+loaded via a namespace (and not attached):
+ [1] Rcpp_1.0.4.6     crayon_1.3.4     packrat_0.5.0    digest_0.6.25    later_1.0.0     
+ [6] mime_0.9         R6_2.4.1         xtable_1.8-4     jsonlite_1.6.1   magrittr_1.5    
+[11] rlang_0.4.5      rstudioapi_0.11  promises_1.1.0   tools_3.6.2      httpuv_1.5.2    
+[16] rsconnect_0.8.16 fastmap_1.0.1    compiler_3.6.2   htmltools_0.4.0 
+
+        
